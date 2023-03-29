@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./anything.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <style>
+          .image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.grid-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px;
+}
+.grid-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.number {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 10px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+
+}
+
+.text {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .grid-item {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  
+  .number {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+  
+  .text {
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  .grid-item {
+    font-size: 0.6rem;
+    padding: 5px;
+  }
+  
+  .number {
+    width: 30px;
+    height: 30px;
+    font-size: 0.7rem;
+  }
+  
+  .text {
+    font-size: 0.7rem;
+  }
+  .charan{
+    text-align: center;
+  }
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+p{
+font-size: 30px;
+font-weight: bold;
+float: left;
+color: #000;
+letter-spacing: 1.5px;
+cursor: pointer;
+font-family: poppins-extralight,poppins,sans-serif;
+}
+.ck1{
+float: left;
+position: absolute;
+top: 25%;
+color: #fff;
+padding: 20px;
+font-size: 50px;
+font-family: poppins-extralight,poppins,sans-serif;
+}
+.ck img{
+    height: 100px;
+    width: 100px;
+}
+section{
+    display: flex;
+}
+.about{
+    background-color: black;
+}
+.about h1{
+    margin-top: 50px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.about p{
+    color: #fff;
+    font-size: medium;
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 60px;
+    font-family: sans-serif;
+    font-size: 18px;
+    cursor: auto;
+}
+
+footer{
+    background-color: #000;
+    padding: 15px 23px;
+    text-align: center;
+    color: #fff;
+    font-family: Roboto,sans-serif;
+}
+.nothing1{
+    position: absolute;
+    top: 340%;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+}
+.nothing2{
+    position: absolute;
+    font-size: 30px;
+    top: 350%;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+   .okkk{
+    position: absolute;
+    top: 310%;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+   }
+   .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons a i {
+    color: #fffbfb;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .social-icons a:hover i {
+    transform: scale(1.2);
+  }
+  
+
+  .container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .container img{
+            width: 300PX;
+            height: 400px;
+            flex: 1 0 200px;
+        }
+        
+.img{
+    width: 100%;
+
+}
+.fa-linkedin,
+.fa-instagram,
+.fa-twitter {
+color: #fff;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: white;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 0.8rem;
+  }
+  .img1{
+    width: 200px;
+    height: 200px;
+  }
+}
+/* @media only screen and (max-width:768px){
+    
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0; 
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #000000;
+        text-decoration: none;
+        
+    }
+    .menu1{
+        display: block;
+        cursor: pointer;
+        margin-top: -50px;
+        
+    }
+} */
+
+.charan{
+    display: flex;
+
+}
+.menu1{
+  height: 0px;
+  width: 0px;
+}
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #fff
+}
+@media only screen and (max-width: 480px) {
+  .heading {
+    font-size: 2rem;
+  }
+  
+}
+.image- {
+  position: relative;
+  text-align: center;
+}
+
+.venue {
+  width: 100%;
+  height: auto;
+}
+
+.headline {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2em;
+  
+  font-family: Roboto,sans-serif;
+}
+.subheadline {
+  font-family: Roboto,sans-serif;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2em;
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .headline {
+    font-size: 1em;
+  }
+  .subheadline {
+    font-size: 1em;
+  }
+}
+.container-1 {
+  background-color: black;
+  padding: 50px;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+.ck img{
+    height: 100px;
+    width: 100px;
+    justify-content: left;
+}
+  .image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -10px;
+  }
+  
+  .image-row img {
+    width: calc(33.33% - 20px);
+    margin: 0 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .image-row img {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .image-row img {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  .topnav {
+  background-color: #000;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.active {
+  /* background-color: #04AA6D; */
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #000;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+  </style>
+</head>
+<body >
+  
+  <script>
+    function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+}
+</script>
+    
+        
+        <div class="topnav" id="myTopnav">
+        <!-- <a href="#home" class="active">Home</a> -->
+        <img src="./Untitleddesign.png" class="active" style="width: 50px; height: 50px; float: left;">
+        <a href="#news"> </a>
+        <a href="#news"> </a>
+        <a href="#">home</a>
+        <a href="#about">About</a>
+        <a href="#contact">contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+        <!-- <img src="menu.png" class="menu1" style="color: azure; ;width: 30px ; height:30px" onclick="menutoggle()"> -->
+    
+    <section>
+      <img src="./main.png" style="width: 100%;">
+  </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style="text-align: center; font-size: 40px; font-family: sans-serif; ">PREASTO-2K23</h1>
+    
+    <div class="container">
+        <p>A forthcoming event being put on by Malla Reddy Engineering College's Atharva Data Science Community. The purpose of Praesto 2k23 is to bring together academics, business professionals, and students to talk about the most recent technological developments. We anticipate a sizable turnout of attendees from across the region who are eager to hear about the newest trends and technological breakthroughs.</p>
+      </div>      
+    <br>
+    <br>
+    <h1 style="color: #fff;">Workshops on</h1>
+    <div class="image-container">
+        <img src="./qwerty.jpg" alt="Your Image">
+        <div class="grid-container">
+          
+          <div class="grid-item">
+            <div class="number">1</div>
+            <div class="text">Data </br>Science</div>
+          </div>
+          <div class="grid-item">
+            <div class="number">2</div>
+            <div class="text">Artificial </br>intelligence</div>
+          </div>
+          <div class="grid-item">
+            <div class="number">3</div>
+            <div class="text">Cyber </br>security</div>
+          </div>
+          <div class="grid-item">
+            <div class="number">4</div>
+            <div class="text">UI/ux </br>designing</div>
+          </div>
+          <div class="grid-item">
+            <div class="number">5</div>
+            <div class="text">Game </br>development</div>
+          </div>
+          <div class="grid-item">
+            <div class="number">6</div>
+            <div class="text">Web </br>development</div>
+          </div>
+          
+          <div class="grid-item"><button class="charan" style="display: flex;flex-direction: row;">click here</button></div>
+        </div>
+      </div>
+      
+      <div class="image-">
+        <img src="venue.png" alt="Image description" class="venue">
+        <h1 class="headline">29 April to May 2</h1>
+        <h1 class="subheadline">Venue:MREC</h1>
+    </div>
+    <div class="image-row">
+      <img src="./main1.png" alt="Image 1">
+      <img src="./main2.png" alt="Image 2">
+      <img src="./main3.png" alt="Image 3">
+    </div>
+      <div class="container-1">
+        <h2 style="text-align: center; font-size: 40px; font-family: sans-serif; " id="about">About us</h2>
+        <br>
+        <br>
+        <p style="color: #fff;">Atharva Data Science Community emerged as a group of passionate students from the
+          department of CSE-Data Science at Malla Reddy Engineering College who are determined to
+          make a positive impact in the world of technology. Our enthusiasm for learning and our
+          unwavering dedication to sharing our knowledge is truly inspiring. By creating a platform for
+          individuals to explore and deepen their understanding of Data Science, we are empowering the
+          next generation of innovators and creators. Atharva Data Science Community is a testament to
+          what can be accomplished when we, the driven individuals come together sharing a purpose.
+          We are not just shaping our own future, but also of the future endeavors of the tech industry as
+          a whole.</p>
+          <p><br>
+          </p>
+        </div>
+        
+    <footer>
+      <br>
+      <p style="color: #000;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ex voluptas numquam, perferendis reprehenderit natus cupiditate modi quas vitae aliquid.</p>
+      <!-- <p style="color: #000;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ex voluptas numquam, perferendis reprehenderit natus cupiditate modi quas vitae aliquid.</p> -->
+        <div class="social-icons" style="font-size: 25px;"  id="contact">Follow us: 
+            <a href="https://www.linkedin.com/company/atharva-data-science-community/ " target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/atharvadsc?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <br>
+        
+        <span>Atharva &copy; | 2023 All rights are reserved.</span>
+    </footer>
+</body>
+</html>
